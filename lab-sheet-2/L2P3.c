@@ -61,7 +61,7 @@ int main() {
 	printf("\nMatrix A:\n");
 	for(i = 0; i < m1; i++) {
 		for(j = 0; j < n1; j++) {
-			printf("%d\t", *(*(arr1 + i) + j));
+			printf("%d\t", *(*(arr + i) + j));
 		}
 		printf("\n");
 	}
