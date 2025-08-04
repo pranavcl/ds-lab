@@ -89,6 +89,13 @@ int main() {
 		printf("\n");
 	}
 
+	for(int i = 0; i < m1; i++) {
+	        free(*(arr+i));
+	        free(*(product+i));
+	}
+	for(int i = 0; i < m2; i++) {
+	        free(*(arr1+i));
+	}
 	free(arr);
 	free(arr1);
 	free(product);
