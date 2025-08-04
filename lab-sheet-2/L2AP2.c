@@ -44,7 +44,10 @@ int main() {
     }
     printf("Foul votes: %d\n", votes[0]);
     printf("Winner: %s\n", candidates[max_id-1]);
- 
+
+    for(i = 0; i < c; i++) {
+        free(*(candidates + i));
+    }
     free(candidates);
     free(votes);
  
