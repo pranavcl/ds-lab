@@ -85,11 +85,9 @@ int main() {
 	scanf("%s", infix);
 
 	n = len(infix);
-	if(infix[n-1] != ')') {
-		infix[n] = ')';
-		infix[n+1] = '\0';
-	}
-
+	infix[n] = ')';
+	infix[n+1] = '\0';
+	
 	push(&stack, '(');
 
 	for(i = 0; infix[i]; i++) {
